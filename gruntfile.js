@@ -46,5 +46,5 @@ module.exports = function(grunt) {
     grunt.task.run(['gh-pages']);
   });
 
-  grunt.registerTask('default', ['docs:serve']);
+  grunt.registerTask('default', ['serve']);
 };

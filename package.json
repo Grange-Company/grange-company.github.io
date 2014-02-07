@@ -1,0 +1,34 @@
+{
+  "name": "Grange",
+  "version": "0.0.1",
+  "description": "Culturally Sustainable Design",
+  "private": true,
+  "homepage": "https://grange.is",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grange-company/grange-and-company.git"
+  },
+  "author": {
+    "name": "Nikolas Wise",
+    "email": "<nikolaswise@gmail.com>",
+    "url": "http://grange.is/"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/grange-company/grange-and-company/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-gh-pages": "~0.9.0",
+    "grunt-middleman": "~0.1.1",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-rename": "~0.1.3",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
+  },
+  "dependencies": {}
+}

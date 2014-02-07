@@ -1,37 +1,39 @@
-projects :
+projects:
   furniture:
-    typology: 'Furniture'
     - name: 'Eliot Table'
       slug: eliot-table
       location: 'Portland'
+      typology: 'Furniture'
       date:
         month: 'November'
         year: '2013'
     - name: 'Tiny Table'
       slug: tiny-table
       location: 'Portland'
+      typology: 'Furniture'
       date:
         month: 'August'
         year: '2013'
     - name: 'Loading Dock'
       slug: loading-dock
       location: 'Portland'
+      typology: 'Furniture'
       date:
         month: 'July'
         year: '2013'
   environment:
-    typology: 'Environment'
     - name: '4 rue le Goff'
       slug: 4-rue-le-goff
       location: 'Paris'
+      typology: 'Environment'
       date:
         month: 'May'
         year: '2013'
   graphic:
-    typology: 'Graphic'
     - name: 'Maxence'
       slug: maxence
       location: 'Paris'
+      typology: 'Graphic'
       date:
         month: 'May'
         year: '2013'

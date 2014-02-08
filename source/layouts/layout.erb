@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <%= partial "partials/head" %>
+  <body class="<%= page_classes %>">
+  <div class="drawer">
+    <%= partial "partials/drawer_left" %>
+    <%= partial "partials/drawer_right" %>
+  </div>
+  <!-- Main Content Wrapper -->
+  <div class="wrapper">
+    <%= partial "partials/nav" %>
+    <%= yield %>
+  </div>
+  <%= javascript_include_tag  "peacoat" %>
+  </body>
+</html>

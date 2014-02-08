@@ -1,0 +1,65 @@
+
+$total-columns:     24 !default;
+$container-width:   100% !default;
+$container-max:     64rem !default;
+$gutter:     1em !default;
+
+$text-color: false !default;
+$text-tonal: false !default;
+
+$link-color: blue;
+$link-hover: rgba($link-color, 0.75);
+
+$selection-background: false !default;
+$selection-color: false !default;
+
+$white:                 hsl(0, 0, 100) !default;
+$off-white:             hsl(0, 0, 98)  !default;
+$lightest-gray:         hsl(0, 0, 92)  !default;
+$lighter-gray:          hsl(0, 0, 80)  !default;
+$light-gray:            hsl(0, 0, 65)  !default;
+$gray:                  hsl(0, 0, 50)  !default;
+$dark-gray:             hsl(0, 0, 35)  !default;
+$darker-gray:           hsl(0, 0, 20)  !default;
+$darkest-gray:          hsl(0, 0, 12)  !default;
+$off-black:             hsl(0, 0, 2)   !default;
+$black:                 hsl(0, 0, 0)   !default;
+
+$desktop:       1280px !default;
+$laptop-large:  1180px !default;
+$laptop:        1080px !default;
+$tablet-wide:   1024px !default;
+$tablet-mid:    960px  !default;
+$tablet-tall:   768px  !default;
+$phone-large:   662px  !default;
+$phone:         480px  !default;
+$phone-tall:    320px  !default;
+
+$all-text-inputs: "
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+select,
+textarea";
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $link-hover;
+  }
+  &:visited {
+    color: $link-color;
+  }
+}

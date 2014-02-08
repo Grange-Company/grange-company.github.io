@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @include clearfix;
+  width: $container-width;
+  max-width: $container-max;
+  margin: auto;
+  background-color: $white;
+}
+
+main {
+  @include clearfix;
+  margin: auto
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

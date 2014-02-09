@@ -1,39 +1,63 @@
 projects:
-  furniture:
-    - name: 'Eliot Table'
-      slug: eliot-table
-      location: 'Portland'
-      typology: 'Furniture'
-      date:
-        month: 'November'
-        year: '2013'
-    - name: 'Tiny Table'
-      slug: tiny-table
-      location: 'Portland'
-      typology: 'Furniture'
-      date:
-        month: 'August'
-        year: '2013'
-    - name: 'Loading Dock'
-      slug: loading-dock
-      location: 'Portland'
-      typology: 'Furniture'
-      date:
-        month: 'July'
-        year: '2013'
-  environment:
-    - name: '4 rue le Goff'
-      slug: 4-rue-le-goff
-      location: 'Paris'
-      typology: 'Environment'
-      date:
-        month: 'May'
-        year: '2013'
-  graphic:
-    - name: 'Maxence'
-      slug: maxence
-      location: 'Paris'
-      typology: 'Graphic'
-      date:
-        month: 'May'
-        year: '2013'
+  # --------
+  # TEMPLATE
+  # --------
+  # - name: 'name'
+  #   description: "description"
+  #   slug: slug
+  #   thumbnail: slug/image.png
+  #   location: 'city'
+  #   typology: 'type'
+  #   date:
+  #     month: 'month'
+  #     year: 'year'
+
+  - name: 'Eliot Table'
+    description: " Edges, lines, and the joining of differences"
+    slug: eliot-table
+    thumbnail: eliot-table/detail.png
+    location: 'Portland'
+    typology: 'Furniture'
+    date:
+      month: 'November'
+      year: '2013'
+
+  - name: 'Tiny Table'
+    description: "It's about tiny living, though."
+    slug: tiny-table
+    thumbnail: tiny-table/table-front.png
+    location: 'Portland'
+    typology: 'Furniture'
+    date:
+      month: 'August'
+      year: '2013'
+
+  - name: 'Loading Dock'
+    description: " How can design, beauty and function be balanced in the entryways of domestic life?"
+    slug: loading-dock
+    thumbnail: loading-dock/body-shot-triple.png
+    location: 'Portland'
+    typology: 'Furniture'
+    date:
+      month: 'July'
+      year: '2013'
+
+  - name: '4 rue le Goff'
+    description: "This 170 sf micro-apartment renovation in the heart of the 5ème arrondissement in Paris examined the city's growing exclusivity."
+    slug: 4-rue-le-goff
+    thumbnail: 4-rue-le-goff/section-view.png
+    location: 'Paris'
+    typology: 'Environment'
+    date:
+      month: 'May'
+      year: '2013'
+
+  - name: 'Maxence'
+    description: "The cover design for Paris based singer-songwriter Maxence's eponymous E.P. Maxence's album art captures her playful and powerful spirit."
+    slug: maxence
+    thumbnail: maxence/two-up.png
+    location: 'Paris'
+    typology: 'Graphic'
+    date:
+      month: 'May'
+      year: '2013'

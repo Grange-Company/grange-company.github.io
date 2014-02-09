@@ -1,12 +1,5 @@
 ---
 title: Tiny Table
-typology: Furniture
-place: Portland
-year: 2013
-spot: red
-slug: tiny-table
-image: tiny-table/table-front.png
-short: It's about tiny living, though.
 ---
 ![Tiny Table](tiny-table/table-front.png)
 

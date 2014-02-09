@@ -1,12 +1,5 @@
 ---
 title: Maxence
-typology: Graphic
-place: Paris
-year: 2013
-spot: pink
-slug: maxence
-image: maxence/two-up.png
-short: The cover design for Paris based singer-songwriter Maxence's eponymous E.P. Maxence's album art captures her playful and powerful spirit.
 ---
 ![Maxence - Albumn Art](maxence/two-up.png)
 

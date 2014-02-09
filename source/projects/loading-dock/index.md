@@ -1,12 +1,5 @@
 ---
 title: Loading Dock
-typology: Furniture
-place: Portland
-year: 2013
-spot: blue
-slug: loading-dock
-image: loading-dock/body-shot-triple.png
-short: How can design, beauty and function be balanced in the entryways of domestic life?
 ---
 ![Loading Dock - Three Views](loading-dock/body-shot-triple.png)
 

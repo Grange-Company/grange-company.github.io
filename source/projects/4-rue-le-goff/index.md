@@ -1,13 +1,5 @@
 ---
 title: 4 Rue le Goff
-typology: Environment
-place: Paris
-year: 2013
-spot: orange
-slug: 4-rue-le-goff
-image: 4-rue-le-goff/section-view.png
-description: Environment - Paris - 2013
-short: This 170 sf micro-apartment renovation in the heart of the 5ème arrondissement in Paris examined the city's growing exclusivity.
 ---
 ![4 Rue le Goff - Section One](4-rue-le-goff/section-view.png)
 # 4 Rue le Goff

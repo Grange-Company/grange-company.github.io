@@ -1,11 +1,5 @@
 ---
 title: Eliot Table
-typology: Furniture
-place: Portland
-year: 2013
-slug: eliot-table
-image: eliot-table/detail.png
-short: Edges, lines, and the joining of differences
 ---
 ![Eliot Table](eliot-table/profile.png)
 

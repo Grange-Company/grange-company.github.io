@@ -1,5 +1,6 @@
 ---
 title: 4 Rue le Goff
+layout: project
 ---
 ![4 Rue le Goff - Section One](4-rue-le-goff/section-view.png)
 # 4 Rue le Goff

@@ -1,5 +1,6 @@
 ---
 title: Maxence
+layout: project
 ---
 ![Maxence - Albumn Art](maxence/two-up.png)
 

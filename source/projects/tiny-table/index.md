@@ -1,5 +1,6 @@
 ---
 title: Tiny Table
+layout: project
 ---
 ![Tiny Table](tiny-table/table-front.png)
 

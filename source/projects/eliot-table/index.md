@@ -1,5 +1,6 @@
 ---
 title: Eliot Table
+layout: project
 ---
 ![Eliot Table](eliot-table/profile.png)
 

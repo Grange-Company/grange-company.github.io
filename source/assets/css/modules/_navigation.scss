@@ -9,7 +9,9 @@ $nav-panel: 0.4*$tonal*$measure;
 .nav-panel {
   position: absolute;
   width: $nav-panel;
-  top: 6*$baseline;
+  // SWAP when other two sections added
+  top: 3*$baseline;
+  // top: 6*$baseline;
   @include box-sizing(border-box);
   margin-left: -0.5*$nav-panel;
   border: 2*$p solid $darkest-gray;
@@ -23,7 +25,9 @@ $nav-panel: 0.4*$tonal*$measure;
   }
   .title {
     @extend %panel-row;
-    @extend %p18;
+     @extend %p12;
+     @extend %upperCase;
+     @include tracking(1);
     //
     padding: 0.25rem 0;
     border-bottom: 2*$p solid $darkest-gray;
@@ -75,17 +79,15 @@ $nav-panel: 0.4*$tonal*$measure;
 @include respond-to(1356px){
   .nav-panel {
     width: $spine;
-    position: absolute;
     top: 0.5*$baseline;
-    @include box-sizing(border-box);
     margin-left: 0;
-    border: 2*$p solid $darkest-gray;
-    background: $off-white;
 
     .title {
       float: left;
       width: 49%;
-      padding: 1rem 0;
+      // SWAP when other two sections added
+      padding: 0.5rem 0 0.25rem 0;
+      // padding: 1rem 0;
       border: none;
     }
     .portfolio {

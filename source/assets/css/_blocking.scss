@@ -1,0 +1,23 @@
+.container {
+  // border: 1px solid red;
+  @include clearfix();
+  background: none;
+}
+
+main {
+  // border: 1px solid blue;
+  max-width: $width;
+  background: none;
+}
+
+section {
+  // border: 1px solid green;
+  width: $measure;
+  margin: auto;
+  background: none;
+}
+
+
+img {
+  max-width: 100%;
+}

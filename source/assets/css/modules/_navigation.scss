@@ -1,0 +1,132 @@
+$nav-panel: 0.4*$tonal*$measure;
+
+.nav-container{
+  position: relative;
+  max-width: $container-max;
+  margin: auto;
+}
+
+.nav-panel {
+  position: absolute;
+  width: $nav-panel;
+  top: 6*$baseline;
+  @include box-sizing(border-box);
+  margin-left: -0.5*$nav-panel;
+  border: 2*$p solid $darkest-gray;
+  // background: $off-white;
+
+  %panel-row {
+    @include box-sizing(border-box);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .title {
+    @extend %panel-row;
+    @extend %p18;
+    //
+    padding: 0.25rem 0;
+    border-bottom: 2*$p solid $darkest-gray;
+  }
+
+  .portfolio {
+   @extend %panel-row;
+   @extend %p12;
+   @extend %upperCase;
+   @include tracking(1);
+   //
+   padding: 0.5rem 0 0.25rem 0;
+   border-bottom: 2*$p solid $darkest-gray;
+   &:hover {
+    background-color: $darkest-gray;
+    color: $off-white;
+   }
+  }
+  .about {
+   @extend %panel-row;
+   @extend %p12;
+   @extend %upperCase;
+   @include tracking(1);
+   //
+   padding: 0.5rem 0 0.25rem 0;
+   border-bottom: 2*$p solid $darkest-gray;
+   &:hover {
+    background-color: $darkest-gray;
+    color: $off-white;
+   }
+  }
+  .contact {
+   @extend %panel-row;
+   @extend %p12;
+   @extend %upperCase;
+   @include tracking(1);
+   //
+   padding: 0.5rem 0 0.25rem 0;
+   margin-top: 0.1rem;
+   margin-bottom: 0.05rem;
+   // border-bottom: 2*$p solid $darkest-gray;
+   &:hover {
+    background-color: $darkest-gray;
+    color: $off-white;
+   }
+  }
+}
+
+@include respond-to(1356px){
+  .nav-panel {
+    width: $spine;
+    position: absolute;
+    top: 0.5*$baseline;
+    @include box-sizing(border-box);
+    margin-left: 0;
+    border: 2*$p solid $darkest-gray;
+    background: $off-white;
+
+    .title {
+      float: left;
+      width: 49%;
+      padding: 1rem 0;
+      border: none;
+    }
+    .portfolio {
+      float: right;
+     width: 25%;
+     border-left: 2*$p solid $darkest-gray;
+    }
+    .about {
+      float: right;
+      width: 25%;
+      border-bottom: none;
+      margin: 0;
+      border-left: 2*$p solid $darkest-gray;
+    }
+    .contact {
+      float: right;
+      width: 25%;
+      margin: 0;
+      border-left: 2*$p solid $darkest-gray;
+    }
+  }
+}
+
+@include respond-to($container-max) {
+  .nav-panel {
+    @include clearfix();
+    position: relative;
+    width: $measure;
+    margin: auto;
+    margin-bottom: -3*$baseline;
+  }
+}
+
+@include respond-to(780px) {
+  .nav-panel {
+    width: $width;
+  }
+}
+
+@include respond-to(500px) {
+  .nav-panel {
+    width: 98%;
+  }
+}

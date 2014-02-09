@@ -1,17 +1,6 @@
-
-$total-columns:     24 !default;
 $container-width:   100% !default;
-$container-max:     64rem !default;
-$gutter:     1em !default;
-
-$text-color: false !default;
-$text-tonal: false !default;
-
-$link-color: blue;
-$link-hover: rgba($link-color, 0.75);
-
-$selection-background: false !default;
-$selection-color: false !default;
+$container-max:     72rem !default;
+$gutter:     2em !default;
 
 $white:                 hsl(0, 0, 100) !default;
 $off-white:             hsl(0, 0, 98)  !default;
@@ -34,6 +23,15 @@ $tablet-tall:   768px  !default;
 $phone-large:   662px  !default;
 $phone:         480px  !default;
 $phone-tall:    320px  !default;
+
+$text-color: $darker-gray;
+$text-tonal: $darkest-gray;
+
+$link-color: blue;
+$link-hover: rgba($link-color, 0.75);
+
+$selection-background: false !default;
+$selection-color: false !default;
 
 $all-text-inputs: "
 input[type='email'],

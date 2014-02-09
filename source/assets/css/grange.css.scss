@@ -1,12 +1,18 @@
 // BASE
 @import 'compass';
+@import 'typecabinet/typecabinet';
 @import 'base/config';
+@import 'base/mixins';
+@import 'base/typography';
 @import 'base/layout';
 @import 'base/grid';
 
 // MODULES
 @import 'modules/drawer';
 @import 'modules/navigation';
+
+// PAGES
+@import 'pages/index';
 
 // BLOCKING
 // To be removed before launch

@@ -4,7 +4,11 @@
   </div>
   <ul>
     <% data.work.projects.each do |i| %>
-      <li> <%= i.name %> </li>
+      <li>
+        <% link_to 'projects/' + i.slug do %>
+            <%=i.name %>
+          <% end %>
+      </li>
     <% end %>
   </ul>
 </nav>

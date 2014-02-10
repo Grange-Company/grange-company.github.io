@@ -22,7 +22,9 @@ title: Grange
     <div class="work block-group block-group-1-up">
       <% data.work.projects.each do |i| %>
         <div class="block">
-          <%= image_tag i.thumbnail %>
+          <% link_to 'projects/' + i.slug do %>
+            <%= image_tag i.thumbnail %>
+          <% end %>
           <section>
             <p class="center-text">
               | <%= i.name %> |

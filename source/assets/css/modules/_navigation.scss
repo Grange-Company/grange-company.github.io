@@ -25,12 +25,18 @@ $nav-panel: 0.4*$tonal*$measure;
   }
   .title {
     @extend %panel-row;
-     @extend %p12;
-     @extend %upperCase;
-     @include tracking(1);
+    @extend %p12;
+    @extend %upperCase;
+    @include tracking(1);
+    @include box-sizing(border-box);
     //
     padding: 0.25rem 0;
+    color: $darkest-gray;
     border-bottom: 2*$p solid $darkest-gray;
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
+    }
   }
 
   .portfolio {

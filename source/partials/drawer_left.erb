@@ -1,14 +1,34 @@
 <nav class="drawer-nav drawer-left"> <!-- drawer-right will put the drawer on the right side. -->
-  <div class="drawer-header">
-    <h4 class="site-title">WORK
+  <div class="block-group block-group-4-up work-legend">
+    <span class="block">typology</span>
+    <span class="block">project</span>
+    <span class="block">city</span>
+    <span class="block">year</span>
   </div>
-  <ul>
-    <% data.work.projects.each do |i| %>
-      <li>
-        <% link_to 'projects/' + i.slug do %>
-            <%=i.name %>
+  <div class="project-index">
+    <% data.work.typologies.each do |t| %>
+      <ul class="block-group block-group-4-up typology-group <%= t.typology.downcase + '-index' %>">
+        <% data.work.projects.each do |i| %>
+          <% if i.typology == t.typology %>
+            <li>
+              <% link_to '/projects/' + i.slug do %>
+                <span class="block typology">
+                  <%= i.typology %>
+                </span>
+                <span class="block name">
+                  <%= i.name %>
+                </span>
+                <span class="block location">
+                  <%= i.location %>
+                </span>
+                <span class="block year">
+                  <%= i.date.year %>
+                </span>
+              <% end %>
+            </li>
           <% end %>
-      </li>
+        <% end %>
+      </ul>
     <% end %>
-  </ul>
+  </div>
 </nav>

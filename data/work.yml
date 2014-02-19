@@ -1,3 +1,8 @@
+typologies:
+  - typology: "Environment"
+  - typology: "Furniture"
+  - typology: "Graphic"
+
 projects:
   # --------
   # TEMPLATE

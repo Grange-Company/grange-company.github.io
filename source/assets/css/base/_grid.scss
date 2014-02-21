@@ -1,40 +1,67 @@
-.block-group {
-  font-family: monospace;
-  letter-spacing: -.65rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  text-align: left;
+ // Mini Inline-Block Grid
+.col {
   display: block;
-}
-
-.block {
-  @extend %WhitneyBook;
-  letter-spacing: normal;
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  float: left;
   position: relative;
-  float: none;
-  text-align: left;
-  vertical-align: top;
-  // box-sizing: border-box;
   @include box-sizing(border-box);
 }
 
-@mixin _block-grid ($prefix: "") {
-  .#{$prefix}block-group-1-up .block { width: 100%; }
-  .#{$prefix}block-group-2-up .block { width: 50%; }
-  .#{$prefix}block-group-3-up .block { width: 33.33333%; }
-  .#{$prefix}block-group-4-up .block { width: 25%; }
-  .#{$prefix}block-group-5-up .block { width: 20%; }
+.col-group {
+  font-family: 'Courier New', Monospace;
+  letter-spacing: -.65em;
+  margin-left: -0.5*$column-gutter;
+  margin-right: -0.5*$column-gutter;
+  text-align: left;
+  .col {
+    display: inline-block;
+    float: none;
+    letter-spacing: normal;
+    padding-left: 0.5*$column-gutter;
+    padding-right: 0.5*$column-gutter;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    @extend %WhitneyBook;
+  }
+  &.no-padding {
+    margin-left: 0;
+    margin-right: 0;
+    .col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &.table {
+    dispay: table;
+    .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
 }
 
-@include _block-grid();
+@function grid-calc($span) {
+  @return percentage(($span / $total-columns));
+}
+
+@mixin column-width($span) {
+  width: grid-calc($span);
+}
+
+@mixin _inline-grid ($prefix: "") {
+  @for $i from 1 through $total-columns {
+    .#{$prefix}col-#{$i} {
+      @include column-width($i);
+    }
+  }
+}
+
+@include _inline-grid();
 
 @include respond-to($tablet-mid){
-  @include _block-grid("tablet-");
+  @include _inline-grid("tablet-");
 }
 
-@include respond-to(700px){
-  @include _block-grid("phone-");
+@include respond-to($phone-large){
+  @include _inline-grid("phone-");
 }

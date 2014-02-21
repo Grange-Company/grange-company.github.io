@@ -1,6 +1,7 @@
-$container-width:   100% !default;
+$container-width:    100% !default;
 $container-max:     72rem !default;
-$gutter:     2em !default;
+$total-columns:        24 !default;
+$column-gutter:              2em !default;
 
 $white:                 hsl(0, 0, 100) !default;
 $off-white:             hsl(0, 0, 98)  !default;

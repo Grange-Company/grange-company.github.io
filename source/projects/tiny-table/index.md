@@ -1,8 +1,8 @@
 ---
 title: Tiny Table
+slug: tiny-table
 layout: project
 ---
-![Tiny Table](tiny-table/table-front.png)
 
 # Tiny Table
 

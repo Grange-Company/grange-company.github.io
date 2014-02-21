@@ -1,8 +1,8 @@
 ---
 title: Loading Dock
+slug: loading-dock
 layout: project
 ---
-![Loading Dock - Three Views](loading-dock/body-shot-triple.png)
 
 # Loading Dock
 

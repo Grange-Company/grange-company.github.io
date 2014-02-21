@@ -1,8 +1,8 @@
 ---
 title: Eliot Table
+slug: eliot-table
 layout: project
 ---
-![Eliot Table](eliot-table/profile.png)
 
 # Eliot Table
 

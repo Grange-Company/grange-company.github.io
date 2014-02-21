@@ -28,7 +28,7 @@ $drawer-width: 42rem;
   list-style: none;
   width: $drawer-width;
   margin: 0;
-  padding: 0;
+  padding: 0 2rem;
   position: absolute;
   top: 0;
   height: 100%;
@@ -61,8 +61,12 @@ $drawer-width: 42rem;
 }
 
 .work-legend {
-  margin: 1rem 1rem;
+  padding: 0;
+  margin: 2*$baseline 0 1*$baseline 0;
+  list-style-type: none;
+  @extend %WhitneyBook;
   span {
+    @extend %WhitneyBook;
     @extend %p10-5;
     @extend %upperCase;
     @include tracking(1);
@@ -71,27 +75,23 @@ $drawer-width: 42rem;
   }
 }
 
+.project-index {
+  @extend %WhitneyBook;
+}
+
 .typology-group {
   padding: 0;
+  margin: 0 0 0.5*$baseline 0;
   list-style-type: none;
   .typology {
     @include opacity(0);
   }
-  .location {
-    padding-left: 0;
-  }
-  .year {
-    margin-left: -1rem;
-    padding-left: 0;
-  }
   li:first-child {
     .typology {
-      padding-left: 1.5rem;
       @include opacity(1);
     }
   }
   a {
-    padding-left: 1rem;
     color: $darkest-gray;
     &:hover {
       color: $gray;

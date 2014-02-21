@@ -1,34 +1,36 @@
 <nav class="drawer-nav drawer-left"> <!-- drawer-right will put the drawer on the right side. -->
-  <div class="block-group block-group-4-up work-legend">
-    <span class="block">typology</span>
-    <span class="block">project</span>
-    <span class="block">city</span>
-    <span class="block">year</span>
-  </div>
-  <div class="project-index">
-    <% data.work.typologies.each do |t| %>
-      <ul class="block-group block-group-4-up typology-group <%= t.typology.downcase + '-index' %>">
-        <% data.work.projects.each do |i| %>
-          <% if i.typology == t.typology %>
-            <li>
-              <% link_to '/projects/' + i.slug do %>
-                <span class="block typology">
-                  <%= i.typology %>
-                </span>
-                <span class="block name">
-                  <%= i.name %>
-                </span>
-                <span class="block location">
-                  <%= i.location %>
-                </span>
-                <span class="block year">
-                  <%= i.date.year %>
-                </span>
-              <% end %>
-            </li>
-          <% end %>
+  <ul class="block-group block-group-4-up work-legend">
+    <li>
+      <span class="block">typology</span>
+      <span class="block">project</span>
+      <span class="block">city</span>
+      <span class="block">year</span>
+    </li>
+  </ul>
+
+  <% data.work.typologies.each do |t| %>
+    <ul class="block-group block-group-4-up typology-group <%= t.typology.downcase + '-index' %>">
+      <% data.work.projects.each do |i| %>
+        <% if i.typology == t.typology %>
+          <li>
+            <% link_to '/projects/' + i.slug do %>
+              <span class="block typology">
+                <%= i.typology %>
+              </span>
+              <span class="block name">
+                <%= i.name %>
+              </span>
+              <span class="block location">
+                <%= i.location %>
+              </span>
+              <span class="block year">
+                <%= i.date.year %>
+              </span>
+            <% end %>
+          </li>
         <% end %>
-      </ul>
-    <% end %>
-  </div>
+      <% end %>
+    </ul>
+  <% end %>
+
 </nav>

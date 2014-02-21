@@ -1,8 +1,8 @@
 .block-group {
   font-family: monospace;
-  letter-spacing: -.65em;
-  margin-left: -1em;
-  margin-right: -1em;
+  letter-spacing: -.65rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   text-align: left;
   display: block;
 }
@@ -11,8 +11,8 @@
   @extend %WhitneyBook;
   letter-spacing: normal;
   display: inline-block;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
   position: relative;
   float: none;
   text-align: left;

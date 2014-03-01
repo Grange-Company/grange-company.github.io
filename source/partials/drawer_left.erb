@@ -2,10 +2,10 @@
 
   <ul class="col-group work-legend">
     <li>
-      <span class="col col-6">typology</span>
-      <span class="col col-8">project</span>
-      <span class="col col-6">city</span>
-      <span class="col col-4">year</span>
+      <span class="col col-6 tablet-col-8 index-typology">typology</span>
+      <span class="col col-8 tablet-col-12 phone-col-20 index-name">project</span>
+      <span class="col col-6 index-location">city</span>
+      <span class="col col-4 index-year">year</span>
     </li>
   </ul>
 
@@ -15,10 +15,10 @@
         <% if i.typology == t.typology %>
           <li>
             <% link_to '/projects/' + i.slug do %>
-              <span class="col col-6 typology">
+              <span class="col col-6 tablet-col-8 typology">
                 <%= i.typology %>
               </span>
-              <span class="col col-8 name">
+              <span class="col col-8 tablet-col-12 phone-col-20 name">
                 <%= i.name %>
               </span>
               <span class="col col-6 location">

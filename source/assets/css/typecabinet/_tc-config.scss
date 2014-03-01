@@ -1,13 +1,16 @@
 // ┌────────┐
 // │ CONFIG │
 // └────────┘
+html {
+  font-size: 16px;
+}
 // ┌─────────────────┐
 // │ PICA + BASELINE │
 // └─────────────────┘
 $pica: 1rem;
 $point: $pica/12;
 $p: $point;
-$baseline: 21*$point;
+$baseline: 24*$point;
 
 // ┌─────────────────┐
 // │ SCALE:  MUSICAL │

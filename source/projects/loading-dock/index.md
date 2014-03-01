@@ -8,7 +8,7 @@ layout: project
 
 How can design, beauty and function be balanced in the entryways of domestic life? The Loading Dock is many things - an artful object, a shelf, a coat rack, a key finder, a shoe rack, and a recipient for everyday things that we continuously interact with. The object's utilitarian spirit draws from the need to keep life simple and contained in a beautiful and interesting way. This furniture piece was hand crafted from old growth fir and is currently available in all native hardwood species of Oregon.
 
-For inquiries about this product, please [contact us](mailto:grange.company@gmail.com) or [visit our Etsy site.](http://www.etsy.com/listing/164827076/loading-dock-custom-shelf-and-storage?ref=shop_home_active)
+<!-- For inquiries about this product, please [contact us](mailto:grange.company@gmail.com) or [visit our Etsy site.](http://www.etsy.com/listing/164827076/loading-dock-custom-shelf-and-storage?ref=shop_home_active) -->
 
 ![Loading Dock - Three Views](loading-dock/body-shot-full.png)
 > The Loading Dock from three angles.

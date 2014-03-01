@@ -1,6 +1,6 @@
 body {
   @extend %WhitneyBook;
-  @extend %p12;
+  @extend %p13-5;
   color: $text-color;
 }
 
@@ -18,11 +18,6 @@ h2 {
 h3 {
   @extend %p18;
 }
-
-.large {
-  @extend %p13-5;
-}
-
 
 .center-text {
   text-align: center;

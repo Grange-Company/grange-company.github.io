@@ -1,5 +1,19 @@
 $nav-panel: 0.4*$tonal*$measure;
 
+%panel {
+  @include box-sizing(border-box);
+  margin-left: -0.3*$nav-panel;
+  border: 2*$p solid $darkest-gray;
+  background: rgba($white, 0.2);
+}
+
+%panel-row {
+  @include box-sizing(border-box);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 .nav-container{
   position: relative;
   max-width: $container-max;
@@ -12,17 +26,9 @@ $nav-panel: 0.4*$tonal*$measure;
   // SWAP when other two sections added
   top: 3*$baseline;
   // top: 6*$baseline;
-  @include box-sizing(border-box);
-  margin-left: -0.5*$nav-panel;
-  border: 2*$p solid $darkest-gray;
   // background: $off-white;
+  @extend %panel;
 
-  %panel-row {
-    @include box-sizing(border-box);
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
   .title {
     @extend %panel-row;
     @extend %p12;
@@ -136,5 +142,37 @@ $nav-panel: 0.4*$tonal*$measure;
 @include respond-to(500px) {
   .nav-panel {
     width: 98%;
+  }
+}
+
+.footer-panel {
+  width: $measure;
+  margin: auto;
+  margin-bottom: 4*$baseline;
+  ul {
+    @extend %panel;
+    padding: 0;
+    height: 3.25rem;
+  }
+  li {
+    @extend %panel-row;
+    @extend %p12;
+    @extend %upperCase;
+    @include box-sizing(border-box);
+    @include clearfix();
+    display: inline-block;
+    padding: 0.5rem 0 0.5rem 0;
+    margin-bottom: -0.33333rem;
+    color: $darkest-gray;
+    max-width: 32.5%;
+    position: relative;
+    width: $measure;
+    &.border-right {
+      border-right: 2*$p solid $darkest-gray;
+    }
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
+    }
   }
 }

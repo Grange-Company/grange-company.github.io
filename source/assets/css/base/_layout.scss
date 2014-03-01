@@ -13,8 +13,17 @@ body {
 
 main {
   @include clearfix;
-  margin: auto
+  margin: auto;
+  max-width: $width;
+  @include respond-to($tablet-mid) {
+    max-width: 100%;
+  }
 }
+
+img {
+  width: 100%;
+}
+
 
 .left {
   float: left;

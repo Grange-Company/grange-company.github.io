@@ -5,15 +5,46 @@
       margin-top: 4*$baseline;
     }
   }
+
+  main {
+    @include respond-to($tablet-mid) {
+      max-width: 100%;
+    }
+  }
+
+  h1 {
+    $offset: 2rem;
+    $border: 3*$p;
+    $border-color: $dark-gray;
+    margin: 1*$baseline 0 -$offset+-1*$border 0;
+    padding-top: 0;
+    padding-left: $offset;
+    border-left: $border solid $border-color;
+    border-right: $border solid $border-color;
+  }
+
   section {
     width: $measure;
     margin: auto;
     background: none;
-
+    @include respond-to($phone-large) {
+      width: $width;
+    }
     img {
       max-width: $un-measure;
       width: $un-measure;
-      margin-left: -50%;
+      margin-top: 1*$baseline;
+      margin-left: -43.75%;
+    }
+  }
+  blockquote {
+    @extend %IdealExtraLightItalic;
+    @extend %p18;
+    margin-bottom: 2*$baseline;
+  }
+  p {
+    @include respond-to($phone-tall) {
+      @extend %p12;
     }
   }
 }

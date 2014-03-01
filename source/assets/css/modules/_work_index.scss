@@ -15,6 +15,16 @@
     color: $darkest-gray;
     border-bottom: 1px solid $darkest-gray;
   }
+  .index-location {
+    @include respond-to($tablet-mid) {
+      display: none;
+    }
+  }
+  .index-typology {
+    @include respond-to($phone) {
+      display: none;
+    }
+  }
 }
 
 .typology {
@@ -34,6 +44,17 @@
       .typology {
         color: $darkest-gray;
       }
+    }
+  }
+
+  .location {
+    @include respond-to($tablet-mid) {
+      display: none;
+    }
+  }
+  .typology {
+    @include respond-to($phone) {
+      display: none;
     }
   }
 }

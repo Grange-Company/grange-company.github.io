@@ -6,11 +6,14 @@ title: Grange
     <main>
       <section class="introduction">
         <h3>
-          Grange is a design-make-build collective rooted in cultural sustainability, holistic design practices, and critical notation of the world around us. Grange evolved out of the desire to create good design that improves the spaces and communities we live in.
+          Grange is a design-make-build collective rooted in cultural sustainability, holistic design practices, and critical notation of the world around us.
         </h3>
-        <p class="center-text">
+<!--         <h3>
+          Grange evolved out of the desire to create good design that improves the spaces and communities we live in.
+        </h3> -->
+<!--         <p class="center-text">
           <a href="#">Call to Action</a>
-        </p>
+        </p> -->
       </section>
     </main>
   </div>
@@ -18,7 +21,6 @@ title: Grange
 
 <div class="container">
   <main>
-    <h2 class="center-text">Work</h2>
     <div class="work block-group block-group-1-up">
       <% data.work.projects.each do |i| %>
         <div class="block">
@@ -26,15 +28,14 @@ title: Grange
             <%= image_tag i.thumbnail %>
           <% end %>
           <section>
-            <p class="center-text">
-              | <%= i.name %> |
-              <%= i.typology %> |
-              <%= i.date.month %> |
-              <%= i.date.year%> |
+            <p class="center-text project-def">
+              <%= i.name %> –
+              <%= i.typology %> –
+              <%= i.date.month %> <%= i.date.year%>
             </p>
-            <p>
+<!--             <p>
               <%= i.description %>
-            </p>
+            </p> -->
           </section>
         </div>
       <% end %>

@@ -3,4 +3,19 @@
     padding-top: 4*$baseline;
     padding-bottom: 4*$baseline;
   }
+
+  .project-def {
+    @extend %IdealExtraLight;
+    @extend %p13-5;
+    margin-bottom: 2*$baseline;
+  }
+}
+
+.introduction {
+  max-width: $measure;
+  margin: auto;
+  @include respond-to(780px) {
+    max-width: 100%;
+    padding: 0 1em;
+  }
 }

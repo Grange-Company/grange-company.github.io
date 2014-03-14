@@ -20,17 +20,27 @@ projects:
   - name: 'Eliot Table'
     description: " Edges, lines, and the joining of differences"
     slug: eliot-table
-    thumbnail: eliot-table/detail.png
+    thumbnail: eliot-table/detail-skinny.png
     location: 'Portland'
     typology: 'Furniture'
     date:
       month: 'November'
       year: '2013'
 
+  - name: '2 Yoke Identity'
+    description: "description"
+    slug: 2yoke
+    thumbnail: 2yoke/card-front.png
+    location: 'Portland'
+    typology: 'Graphic'
+    date:
+      month: 'September'
+      year: '2013'
+
   - name: 'Tiny Table'
     description: "It's about tiny living, though."
     slug: tiny-table
-    thumbnail: tiny-table/table-front.png
+    thumbnail: tiny-table/table-front-skinny.png
     location: 'Portland'
     typology: 'Furniture'
     date:
@@ -40,7 +50,7 @@ projects:
   - name: 'Loading Dock'
     description: " How can design, beauty and function be balanced in the entryways of domestic life?"
     slug: loading-dock
-    thumbnail: loading-dock/body-shot-triple.png
+    thumbnail: loading-dock/shelf-skinny.png
     location: 'Portland'
     typology: 'Furniture'
     date:
@@ -60,7 +70,7 @@ projects:
   - name: 'Maxence'
     description: "The cover design for Paris based singer-songwriter Maxence's eponymous E.P. Maxence's album art captures her playful and powerful spirit."
     slug: maxence
-    thumbnail: maxence/two-up.png
+    thumbnail: maxence/two-up-skinny.png
     location: 'Paris'
     typology: 'Graphic'
     date:

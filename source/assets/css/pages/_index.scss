@@ -7,6 +7,8 @@
   .project-def {
     @extend %IdealExtraLight;
     @extend %p13-5;
+    @extend %upperCase;
+    @include tracking(1);
     margin-bottom: 2*$baseline;
   }
 }
@@ -17,5 +19,12 @@
   @include respond-to(780px) {
     max-width: 100%;
     padding: 0 1em;
+  }
+}
+
+.index-block {
+  @include column-width(12);
+  @include respond-to(1350px) {
+    @include column-width(24);
   }
 }

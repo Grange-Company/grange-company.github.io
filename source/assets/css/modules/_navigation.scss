@@ -18,13 +18,17 @@ $nav-panel: 0.4*$tonal*$measure;
   position: relative;
   max-width: $container-max;
   margin: auto;
+  a {
+    color: $darkest-gray;
+  }
 }
 
 .nav-panel {
-  position: absolute;
-  width: $nav-panel;
-  // SWAP when other two sections added
-  top: 3*$baseline;
+  width: $spine;
+  top: 0.5*$baseline;
+  margin-left: 0; 
+  position: absolute;  
+  // SWAP when other two sections added  
   // top: 6*$baseline;
   // background: $off-white;
   @extend %panel;
@@ -36,7 +40,12 @@ $nav-panel: 0.4*$tonal*$measure;
     @include tracking(1);
     @include box-sizing(border-box);
     //
-    padding: 0.25rem 0;
+    float: left;
+    width: 50%;
+    // SWAP when other two sections added
+    padding: 0.5rem 0 0.25rem 0;
+    // padding: 1rem 0;
+    border: none;
     color: $darkest-gray;
     border-bottom: 2*$p solid $darkest-gray;
     &:hover {
@@ -51,11 +60,14 @@ $nav-panel: 0.4*$tonal*$measure;
    @extend %upperCase;
    @include tracking(1);
    //
-   padding: 0.5rem 0 0.25rem 0;
-   border-bottom: 2*$p solid $darkest-gray;
-   &:hover {
-    background-color: $darkest-gray;
-    color: $off-white;
+    float: right;
+    width: 25%;
+    padding: 0.5rem 0 0.25rem 0;
+    border-left: 2*$p solid $darkest-gray;
+    border-bottom: 2*$p solid $darkest-gray;
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
    }
   }
   .about {
@@ -64,61 +76,31 @@ $nav-panel: 0.4*$tonal*$measure;
    @extend %upperCase;
    @include tracking(1);
    //
-   padding: 0.5rem 0 0.25rem 0;
-   border-bottom: 2*$p solid $darkest-gray;
-   &:hover {
-    background-color: $darkest-gray;
-    color: $off-white;
-   }
+    float: right;
+    width: 25%;    
+    margin: 0;
+    padding: 0.5rem 0 0.25rem 0;
+    border-bottom: none;
+    border-left: 2*$p solid $darkest-gray;       
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
+    }
   }
   .contact {
-   @extend %panel-row;
-   @extend %p12;
-   @extend %upperCase;
-   @include tracking(1);
-   //
-   padding: 0.5rem 0 0.25rem 0;
-   margin-top: 0.1rem;
-   margin-bottom: 0.05rem;
-   // border-bottom: 2*$p solid $darkest-gray;
-   &:hover {
-    background-color: $darkest-gray;
-    color: $off-white;
-   }
-  }
-}
-
-@include respond-to(1356px){
-  .nav-panel {
-    width: $spine;
-    top: 0.5*$baseline;
-    margin-left: 0;
-
-    .title {
-      float: left;
-      width: 50%;
-      // SWAP when other two sections added
-      padding: 0.5rem 0 0.25rem 0;
-      // padding: 1rem 0;
-      border: none;
-    }
-    .portfolio {
-      float: right;
-      width: 25%;
-      border-left: 2*$p solid $darkest-gray;
-    }
-    .about {
-      float: right;
-      width: 25%;
-      border-bottom: none;
-      margin: 0;
-      border-left: 2*$p solid $darkest-gray;
-    }
-    .contact {
-      float: right;
-      width: 25%;
-      margin: 0;
-      border-left: 2*$p solid $darkest-gray;
+    @extend %panel-row;
+    @extend %p12;
+    @extend %upperCase;
+    @include tracking(1);
+    //
+    float: right;
+    width: 25%;
+    margin: 0;
+    border-left: 2*$p solid $darkest-gray;   
+    padding: 0.5rem 0 0.25rem 0;     
+    &:hover {
+     background-color: $darkest-gray;
+     color: $off-white;
     }
   }
 }

@@ -6,7 +6,7 @@ title: Grange
     <main>
       <section class="introduction">
         <h3>
-          Grange is a design-make-build collective rooted in cultural sustainability, holistic design practices, and critical notation of the world around us.
+          Grange & Company is a design-make-build collective rooted in cultural sustainability, holistic design practices, and critical notation of the world around us.
         </h3>
 <!--         <h3>
           Grange evolved out of the desire to create good design that improves the spaces and communities we live in.
@@ -21,9 +21,9 @@ title: Grange
 
 <div class="container">
   <main>
-    <div class="work block-group block-group-1-up">
+    <div class="work col-group">
       <% data.work.projects.each do |i| %>
-        <div class="block">
+        <div class="col index-block">
           <% link_to 'projects/' + i.slug do %>
             <%= image_tag i.thumbnail %>
           <% end %>

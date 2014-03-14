@@ -9,7 +9,10 @@ body {
   max-width: $container-max;
   margin: auto;
   background-color: $white;
+  margin-top: 4*$baseline;
 }
+
+
 
 main {
   @include clearfix;

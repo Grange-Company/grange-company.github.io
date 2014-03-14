@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba($off-white, 0.2);
 }
 
 .container {
   @include clearfix;
   width: $container-width;
   max-width: $container-max;
-  margin: auto;
-  background-color: $white;
+  margin: auto;  
   margin-top: 4*$baseline;
 }
 

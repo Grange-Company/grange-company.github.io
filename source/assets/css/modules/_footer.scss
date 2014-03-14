@@ -1,8 +1,8 @@
 footer{
   padding: 1*$baseline;
-  background-color: $darker-gray;
+  background-color: $blue;
   color: $off-white;
-  border-top: 4px solid $darkest-gray;
+  border-top: 4px solid rgba($blue-gray, .1);
   p {
     @extend %WhitneyBook;
     @extend %p12;

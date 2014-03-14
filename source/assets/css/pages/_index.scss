@@ -27,4 +27,25 @@
   @include respond-to(1350px) {
     @include column-width(24);
   }
+  figure {
+    @include box-sizing(border-box);
+    margin: 0;
+    background-color: $blue;    
+  }  
+  img {
+    display: block;
+    @include transition(opacity 105ms ease-in);
+    &:hover {
+      @include transition(opacity 105ms ease-in);
+      @include opacity(0.25);
+    }
+  }
+  a {
+    color: rgba($off-white, 1);    
+  }
+  .project-def {
+    margin-top: -19rem;
+    margin-bottom: 20rem;
+    padding-bottom: 1rem;    
+  }
 }

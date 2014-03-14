@@ -4,16 +4,37 @@ $total-columns:        24 !default;
 $column-gutter:       2em !default;
 
 $white:                 hsl(0, 0, 100) !default;
-$off-white:             hsl(0, 0, 98)  !default;
-$lightest-gray:         hsl(0, 0, 92)  !default;
+$off-white:             #fffcf1  !default;
+// $lightest-gray:         hsl(0, 0, 92)  !default;
+$lightest-gray:         #dde0db;
 $lighter-gray:          hsl(0, 0, 80)  !default;
-$light-gray:            hsl(0, 0, 65)  !default;
+// $light-gray:            hsl(0, 0, 65)  !default;
+$light-gray:            #acb2a7;
 $gray:                  hsl(0, 0, 50)  !default;
-$dark-gray:             hsl(0, 0, 35)  !default;
-$darker-gray:           hsl(0, 0, 20)  !default;
-$darkest-gray:          hsl(0, 0, 12)  !default;
+// $dark-gray:             hsl(0, 0, 35)  !default;
+$dark-gray:             #53554d;
+$darker-gray:           hsl(0, 0, 20)  !default;                        
+// $darkest-gray:          hsl(0, 0, 12)  !default;
+$darkest-gray:          #153023;
 $off-black:             hsl(0, 0, 2)   !default;
 $black:                 hsl(0, 0, 0)   !default;
+
+$blue:                  hsl(214, 25, 78);
+$blue:                  #97acc8;
+$blue-gray:             hsl(214, 25, 28);
+
+$orange:                hsl(28, 47, 94);
+// $bright-orange:         hsl(35, 75, 94);
+$bright-orange:         #f0a53b;
+// $bright-orange:         rgb(240, 165, 59);  
+
+$yellow:                hsl(49, 31, 100);
+$yellow:                #fff1af;
+
+$warm-yellow:           hsl(48, 45, 94);
+
+$brown:                 hsl(34, 25, 77);
+
 
 $desktop:       1280px !default;
 $laptop-large:  1180px !default;
@@ -28,7 +49,7 @@ $phone-tall:    320px  !default;
 $text-color: $darker-gray;
 $text-tonal: $darkest-gray;
 
-$link-color: blue;
+$link-color: $blue;
 $link-hover: rgba($link-color, 0.75);
 
 $selection-background: false !default;

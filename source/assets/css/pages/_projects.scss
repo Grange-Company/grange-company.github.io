@@ -29,10 +29,7 @@
       background: none;
 
       img {    
-        float: left;
-        margin-left: -43.75%;
-        @include respond-to(1500px) {
-          float: none;  
+        @include respond-to(1500px) {          
           max-width: $un-measure;
           width: $un-measure;
           margin-top: 1*$baseline;        
@@ -46,11 +43,7 @@
     blockquote {
       @extend %IdealExtraLightItalic;
       @extend %p13-5;
-      margin-bottom: 2*$baseline;
-      float: right;
-      @include respond-to(1500px) {
-        float: none;
-      }
+      margin-bottom: 2*$baseline;      
     }
     p {
       @include respond-to($phone-tall) {

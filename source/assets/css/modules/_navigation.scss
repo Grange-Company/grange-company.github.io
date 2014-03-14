@@ -2,9 +2,9 @@ $nav-panel: 0.4*$tonal*$measure;
 
 %panel {
   @include box-sizing(border-box);
-  margin-left: -0.3*$nav-panel;
+  // margin-left: -0.3*$nav-panel;
   border: 2*$p solid $darkest-gray;
-  background: rgba($white, 0.2);
+  background: rgba($white, 0.5);
 }
 
 %panel-row {
@@ -96,7 +96,7 @@ $nav-panel: 0.4*$tonal*$measure;
 
     .title {
       float: left;
-      width: 49%;
+      width: 50%;
       // SWAP when other two sections added
       padding: 0.5rem 0 0.25rem 0;
       // padding: 1rem 0;
@@ -104,8 +104,8 @@ $nav-panel: 0.4*$tonal*$measure;
     }
     .portfolio {
       float: right;
-     width: 25%;
-     border-left: 2*$p solid $darkest-gray;
+      width: 25%;
+      border-left: 2*$p solid $darkest-gray;
     }
     .about {
       float: right;
@@ -145,34 +145,34 @@ $nav-panel: 0.4*$tonal*$measure;
   }
 }
 
-.footer-panel {
-  width: $measure;
-  margin: auto;
-  margin-bottom: 4*$baseline;
-  ul {
-    @extend %panel;
-    padding: 0;
-    height: 3.25rem;
-  }
-  li {
-    @extend %panel-row;
-    @extend %p12;
-    @extend %upperCase;
-    @include box-sizing(border-box);
-    @include clearfix();
-    display: inline-block;
-    padding: 0.5rem 0 0.5rem 0;
-    margin-bottom: -0.33333rem;
-    color: $darkest-gray;
-    max-width: 32.5%;
-    position: relative;
-    width: $measure;
-    &.border-right {
-      border-right: 2*$p solid $darkest-gray;
-    }
-    &:hover {
-      background-color: $darkest-gray;
-      color: $off-white;
-    }
-  }
-}
+// .footer-panel {
+//   width: $measure;
+//   margin: auto;
+//   margin-bottom: 4*$baseline;
+//   ul {
+//     @extend %panel;
+//     padding: 0;
+//     height: 3.25rem;
+//   }
+//   li {
+//     @extend %panel-row;
+//     @extend %p12;
+//     @extend %upperCase;
+//     @include box-sizing(border-box);
+//     @include clearfix();
+//     display: inline-block;
+//     padding: 0.5rem 0 0.5rem 0;
+//     // margin-bottom: -0.33333rem;
+//     color: $darkest-gray;
+//     // max-width: 32.5%;
+//     // position: relative;
+//     width: 32.78%;
+//     &.border-left {
+//       border-left: 2*$p solid $darkest-gray;
+//     }
+//     &:hover {
+//       background-color: $darkest-gray;
+//       color: $off-white;
+//     }
+//   }
+// }

@@ -8,8 +8,8 @@ body {
   @include clearfix;
   width: $container-width;
   max-width: $container-max;
-  margin: auto;  
-  margin-top: 4*$baseline;
+  margin: auto;
+  // margin-top: 4*$baseline;
 }
 
 

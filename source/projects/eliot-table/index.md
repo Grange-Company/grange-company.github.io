@@ -12,10 +12,10 @@ explorations of the craftsman’s art on closer examination. Designed by Celia B
 The companions to the Eliot Table are the Eliot Benches - alluding to the craftsman style while maintaining a slim profile, the Benches provide pragmatic support and formal contrast, bringing out the subtle geometries and material
 juxtapositions of their larger counterpart. The Eliot Benches are designed and manufactured as their counterpart table, using carefully considered cast-off and spare materials.
 
-![Eliot Table](eliot-table/end.jpg)
+![Eliot Table](eliot-table/profile.jpg)
 > The Eliot Table features a Western Red Maple accent.
 
-![Eliot Table](eliot-table/detail.png)
+![Eliot Table](eliot-table/end.jpg)
 > Close detail of joinery.
 
 ![Eliot Bench](eliot-table/bench-white.jpg)

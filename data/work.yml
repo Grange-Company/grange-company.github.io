@@ -20,7 +20,7 @@ projects:
   - name: 'Eliot Table'
     description: " Edges, lines, and the joining of differences"
     slug: eliot-table
-    thumbnail: eliot-table/detail-skinny.png
+    thumbnail: eliot-table/detail-skinny.jpg
     location: 'Portland'
     typology: 'Furniture'
     date:
@@ -30,7 +30,7 @@ projects:
   - name: '2 Yoke Identity'
     description: "description"
     slug: 2yoke
-    thumbnail: 2yoke/card-front.png
+    thumbnail: 2yoke/card-front.jpg
     location: 'Portland'
     typology: 'Graphic'
     date:
@@ -60,7 +60,7 @@ projects:
   - name: '4 rue le Goff'
     description: "This 170 sf micro-apartment renovation in the heart of the 5ème arrondissement in Paris examined the city's growing exclusivity."
     slug: 4-rue-le-goff
-    thumbnail: 4-rue-le-goff/section-view.png
+    thumbnail: 4-rue-le-goff/section-view.jpg
     location: 'Paris'
     typology: 'Environment'
     date:

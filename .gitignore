@@ -10,5 +10,7 @@
 # Ignore .DS_store file
 .DS_Store
 
+.grunt
+
 # Igore node stuff
 node_modules
